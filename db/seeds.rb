@@ -80,7 +80,7 @@ Item.create!(
 )
 
 Item.create!(
-  category: 'Formal Wear',
+  category: 'Suits',
   retail_price: 300.00,
   description: 'Versace black silk tuxedo with gold accents.',
   rental_price: 70.00,
@@ -104,7 +104,7 @@ Item.create!(
 )
 
 Item.create!(
-  category: 'Formal Wear',
+  category: 'Suits',
   retail_price: 350.00,
   description: 'Armani navy blue wool suit.',
   rental_price: 80.00,
@@ -112,7 +112,7 @@ Item.create!(
 )
 
 Item.create!(
-  category: 'Formal Wear',
+  category: 'Dresses',
   retail_price: 280.00,
   description: 'Calvin Klein classic black dress.',
   rental_price: 60.00,
@@ -120,7 +120,7 @@ Item.create!(
 )
 
 Item.create!(
-  category: 'Formal Wear',
+  category: 'Dresses',
   retail_price: 400.00,
   description: 'Dolce & Gabbana white silk gown.',
   rental_price: 100.00,
