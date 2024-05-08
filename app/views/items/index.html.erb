@@ -1,0 +1,8 @@
+<h1>items for rent</h1>
+
+<ul>
+<% @items.each do |item| %>
+<li><%= link_to item.description, item_path(item) %></li>
+
+<% end %>
+</ul>
