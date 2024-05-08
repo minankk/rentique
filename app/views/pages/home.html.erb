@@ -1,2 +1,84 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentique - Rent Formal Wear</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .navbar {
+            background-color: blue; /* Blue */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .navbar a:hover {
+            background-color: #004494;
+        }
+        .hero {
+            background-color: #1ca981; /* Yellow */
+            color: #0056b3;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #1ca981;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Home</a></div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Rentique!</h1>
+        <p>Exclusive luxury clothing rentals at your fingertips.</p>
+    </div>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <p>Rentique offers a wide range of high-end clothing for your special occasions. Rent and return, it's that simple!</p>
+
+        <h2>Our Services</h2>
+        <p>Explore our catalog of dresses, suits, and accessories. Perfect for weddings, galas, and corporate events.</p>
+    </div>
+
+    <div class="footer">
+        © <%= Time.now.year %> Rentique. All rights reserved.
+    </div>
+</body>
+</html>
+
+
+
+#<h1>Pages#home</h1>
+
+#<p>Find me in app/views/pages/home.html.erb</p>
