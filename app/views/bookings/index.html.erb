@@ -1,0 +1,8 @@
+<h1>All bookings</h1>
+
+<ul>
+<% @bookings.each do |booking| %>
+<li><%= link_to booking.item.description, item_path(booking.item) %></li>
+
+<% end %>
+</ul>
