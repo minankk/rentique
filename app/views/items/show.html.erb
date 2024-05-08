@@ -1,9 +1,9 @@
-<h1><%= @item.description %></h1>
-
-<p>Retail Price: <%= number_to_currency(@item.retail_price) %></p>
-<p>Category: <%= @item.category %></p>
-<p>Description: <%= @item.description %></p>
-<p>Rental Price: <%= @item.rental_price %></p>
-
-<%= link_to 'Back', items_path %>
-<%= link_to "book this item", new_item_booking_path(@item)  %>
+   <div class="container">
+        <h1><%= @item.description %></h1>
+        <p> Retail Price: $<%= @item.retail_price %></p>
+        <p>Category: <%= @item.category %></p>
+        <p>Description: <%= @item.description %></p>
+        <p>Rental Price: $<%= @item.rental_price %></p>
+    </div>
+    <%= link_to 'Back', items_path %>
+    <%= link_to "book this item", new_item_booking_path(@item) %>
