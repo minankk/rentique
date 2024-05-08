@@ -1,8 +1,24 @@
-<h1>items for rent</h1>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <form class="search-box" action="#" method="GET">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </div>
 
-<ul>
-<% @items.each do |item| %>
-<li><%= link_to item.description, item_path(item) %></li>
+    <h1>Items for Rent</h1>
 
-<% end %>
-</ul>
+    <div class="grid-container">
+        <% @items.each do |item| %>
+            <div class="card">
+                <div class="card-image">
+                    <!-- You can add the image here -->
+                    <!-- <img src="item_image.jpg" alt="Item Image"> -->
+                </div>
+                <div class="card-content">
+                    <%= link_to item.description, item_path(item) %>
+                </div>
+            </div>
+        <% end %>
+    </div>
