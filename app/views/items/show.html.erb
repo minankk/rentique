@@ -1,0 +1,12 @@
+<h1><%= @item.description %></h1>
+
+<p>Retail Price: <%= number_to_currency(@item.retail_price) %></p>
+<p>Category: <%= @item.category %></p>
+<p>Description: <%= @item.description %></p>
+<p>Rental Price: <%= @item.rental_price %></p>
+
+
+
+
+<%= link_to 'Edit', edit_item_path(@item) %>
+<%= link_to 'Back', items_path %>
