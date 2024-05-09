@@ -9,7 +9,7 @@
 #   end
 
 Booking.destroy_all
-# Item.destroy_all
+Item.destroy_all
 User.destroy_all
 
 # Create users
