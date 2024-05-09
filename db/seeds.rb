@@ -105,7 +105,7 @@ Item.create!(
   description: 'Cult gaia sirena shell clutch',
   rental_price: 11.00,
   user: user2,
-  image_url: "https://cdn-images.farfetch-contents.com/20/88/99/38/20889938_50903813_1000.jpg"
+  image_url: "cult bag copy.jpg"
 )
 
 Item.create!(
@@ -141,7 +141,7 @@ Item.create!(
   description: 'Jacquemus Le petit caluno top-handle bag',
   rental_price: 17.00,
   user: user3,
-  image_url: "https://cdn-images.farfetch-contents.com/22/88/15/78/22881578_52878531_1000.jpg"
+  image_url: "jac bag copy 2.jpg"
 )
 
 Item.create!(
@@ -186,7 +186,7 @@ Item.create!(
   description: 'Tom Ford martin leather loafers',
   rental_price: 10.00,
   user: user1,
-  image_url: "https://cdn-images.farfetch-contents.com/22/23/55/60/22235560_52307425_1000.jpg"
+  image_url: "tf shoes copy.jpg"
 )
 
 Item.create!(
@@ -195,7 +195,7 @@ Item.create!(
   description: 'Aquazzura tequila sandals',
   rental_price: 19.00,
   user: user1,
-  image_url: "https://cdn-images.farfetch-contents.com/20/79/82/20/20798220_51031178_1000.jpg"
+  image_url: "aqua heels copy.jpg"
 )
 
 # Create bookings
