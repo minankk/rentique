@@ -9,9 +9,8 @@
 #   end
 
 Booking.destroy_all
-# Item.destroy_all
+Item.destroy_all
 User.destroy_all
-
 
 # Create users
 user1 = User.create!(
@@ -66,81 +65,105 @@ user6 = User.create!(
 # Create items
 Item.create!(
   category: 'Dresses',
-  retail_price: 260.00,
-  description: 'Revolve elegant black midi dress.',
-  rental_price: 40.00,
+  retail_price: 163.00,
+  description: 'Reformation elegant black midi dress',
+  rental_price: 15.00,
   user: user1
 )
 
 Item.create!(
   category: 'Jackets',
-  retail_price: 150.00,
-  description: 'Hugo Boss black satin suit jacket .',
-  rental_price: 35.00,
+  retail_price: 509.00,
+  description: 'Hugo Boss black satin suit jacket',
+  rental_price: 22.00,
   user: user2
 )
 
 Item.create!(
   category: 'Suits',
-  retail_price: 300.00,
-  description: 'Versace black silk tuxedo with gold accents.',
+  retail_price: 2680.00,
+  description: 'Versace black crystal-embellished wool blazer',
   rental_price: 70.00,
   user: user3
 )
 
 Item.create!(
   category: 'Accessories',
-  retail_price: 50.00,
-  description: 'Gucci leather belt with silver buckle.',
+  retail_price: 435.00,
+  description: 'Gucci GG buckle leather belt',
   rental_price: 10.00,
   user: user2
 )
 
 Item.create!(
   category: 'Accessories',
-  retail_price: 650.00,
-  description: 'Cult gaia rafia clutch',
+  retail_price: 460.00,
+  description: 'Cult gaia sirena shell clutch',
   rental_price: 11.00,
   user: user2
 )
 
 Item.create!(
   category: 'Suits',
-  retail_price: 350.00,
-  description: 'Armani navy blue wool suit.',
+  retail_price: 1450.00,
+  description: 'Armani navy blue wool suit',
   rental_price: 80.00,
   user: user2
 )
 
 Item.create!(
   category: 'Dresses',
-  retail_price: 280.00,
-  description: 'Calvin Klein classic black dress.',
-  rental_price: 60.00,
+  retail_price: 303.00,
+  description: 'Calvin Klein classic black slip dress',
+  rental_price: 26.00,
   user: user4
 )
 
 Item.create!(
   category: 'Dresses',
-  retail_price: 400.00,
-  description: 'Dolce & Gabbana white silk gown.',
+  retail_price: 9150.00,
+  description: 'Dolce & Gabbana corseted white silk gown',
   rental_price: 100.00,
   user: user5
 )
 
 Item.create!(
   category: 'Accessories',
-  retail_price: 70.00,
-  description: 'Prada leather clutch with gold chain.',
-  rental_price: 20.00,
+  retail_price: 1167.00,
+  description: 'Jacquemus Le petit caluno top-handle bag',
+  rental_price: 17.00,
   user: user3
 )
 
 Item.create!(
   category: 'Accessories',
-  retail_price: 60.00,
-  description: 'Tiffany & Co. pearl earrings.',
-  rental_price: 15.00,
+  retail_price: 6875.00,
+  description: 'Tiffany & Co. Victoria pearl earrings.',
+  rental_price: 41.00,
+  user: user1
+)
+
+Item.create!(
+  category: 'Jackets',
+  retail_price: 2551.00,
+  description: 'Lanvin double-breasted wool blazer',
+  rental_price: 31.00,
+  user: user4
+)
+
+Item.create!(
+  category: 'Jakcets',
+  retail_price: 5175.00,
+  description: 'Ralph Lauren purple label Gregory Handmade Barathea Shawl Tuxedo',
+  rental_price: 81.00,
+  user: user1
+)
+
+Item.create!(
+  category: 'Jakcets',
+  retail_price: 3650.00,
+  description: 'Brunello Cucinelli Navy Single-breasted linen blazer',
+  rental_price: 91.00,
   user: user1
 )
 
