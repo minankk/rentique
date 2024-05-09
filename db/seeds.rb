@@ -9,7 +9,7 @@
 #   end
 
 Booking.destroy_all
-Item.destroy_all
+# Item.destroy_all
 User.destroy_all
 
 # Create users
@@ -63,15 +63,16 @@ user6 = User.create!(
 
 
 # Create items
-Item.create!(
+item1 = Item.create!(
   category: 'Dresses',
   retail_price: 163.00,
   description: 'Reformation elegant black midi dress',
   rental_price: 15.00,
   user: user1
+
 )
 
-Item.create!(
+item2 = Item.create!(
   category: 'Jackets',
   retail_price: 509.00,
   description: 'Hugo Boss black satin suit jacket',
@@ -79,7 +80,7 @@ Item.create!(
   user: user2
 )
 
-Item.create!(
+item3 = Item.create!(
   category: 'Suits',
   retail_price: 2680.00,
   description: 'Versace black crystal-embellished wool blazer',
@@ -87,7 +88,7 @@ Item.create!(
   user: user3
 )
 
-Item.create!(
+item4 = Item.create!(
   category: 'Accessories',
   retail_price: 435.00,
   description: 'Gucci GG buckle leather belt',
@@ -170,56 +171,28 @@ Item.create!(
 # Create bookings
 Booking.create!(
   user: user1,
-  item_id: 2,
+  item: item1,
   start_date: Date.today,
   end_date: Date.today + 3.days
 )
 
 Booking.create!(
   user: user2,
-  item_id: 3,
+  item: item2,
   start_date: Date.today - 2.days,
   end_date: Date.today + 1.day
 )
 
 Booking.create!(
   user: user3,
-  item_id: 1,
+  item: item3,
   start_date: Date.today + 1.day,
   end_date: Date.today + 5.days
 )
 
 Booking.create!(
   user: user4,
-  item_id: 2,
+  item: item4,
   start_date: Date.today - 1.day,
-  end_date: Date.today + 2.days
-)
-
-Booking.create!(
-  user: user5,
-  item_id: 3,
-  start_date: Date.today - 3.days,
-  end_date: Date.today + 4.days
-)
-
-Booking.create!(
-  user: user6,
-  item_id: 6,
-  start_date: Date.today - 1.day,
-  end_date: Date.today + 3.days
-)
-
-Booking.create!(
-  user: user4,
-  item_id: 7,
-  start_date: Date.today + 2.days,
-  end_date: Date.today + 5.days
-)
-
-Booking.create!(
-  user: user3,
-  item_id: 8,
-  start_date: Date.today - 3.days,
   end_date: Date.today + 2.days
 )
