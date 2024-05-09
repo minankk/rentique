@@ -168,6 +168,22 @@ Item.create!(
   user: user1
 )
 
+Item.create!(
+  category: 'Shoes',
+  retail_price: 1070.00,
+  description: 'Tom Ford martin leather loafers',
+  rental_price: 10.00,
+  user: user1
+)
+
+Item.create!(
+  category: 'Shoes',
+  retail_price: 1095.00,
+  description: 'Aquazzura tequila sandals',
+  rental_price: 19.00,
+  user: user1
+)
+
 # Create bookings
 Booking.create!(
   user: user1,
