@@ -1,12 +1,13 @@
 
-<div class="booking-form">
-  <h1>Create Your Booking</h1>
-  <h3><%= @item.description %></h3>
-  <%= simple_form_for [@item, @booking], html: { class: 'custom-form' } do |f| %>
-    <%= f.input :start_date, input_html: { class: 'form-control' } %>
-    <%= f.input :end_date, input_html: { class: 'form-control' } %>
-    <%= f.submit "Submit", class: "btn btn-primary" %>
-  <% end %>
+<div class="booking-form" >
+<h1>create your booking</h1>
+<h3><%= @item.description %> </h3>
+        <%= simple_form_for [@item, @booking] do |f| %>
+          <%= f.input :start_date %>
+          <%= f.input :end_date %>
+          <%= f.submit class: "btn btn-flat" %>
+        <% end %>
 </div>
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
+

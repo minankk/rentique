@@ -1,8 +1,21 @@
-.booking-form {
-text-align: center;
-}
 
-.form-control {
-  border-radius: 2px;
-  height: 4rem;
+
+
+.booking-form {
+  max-width: 600px; // Example maximum width
+  margin: 0 auto; // Center the form horizontally
+  padding: 20px; // Example padding
+
+  h1 {
+    color: #15B3D8; // Example color
+    font-size: 24px; // Example font size
+    margin-bottom: 10px; // Example margin bottom
+  }
+
+  h3 {
+    color: #15b4d85d; // Example color
+    font-size: 18px; // Example font size
+    margin-bottom: 20px; // Example margin bottom
+  }
+
 }
