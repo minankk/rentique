@@ -1,11 +1,19 @@
     <div class="navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <form class="search-box" action="#" method="GET">
-            <input type="text" placeholder="Search for...">
-            <input type="submit" value="Search">
-        </form>
+        <%= link_to "Home", root_path %>
+
     </div>
+<div class="row justify-content-center">
+  <div class="col-sm-8 my-3">
+    <%= form_with url: items_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :query,
+            params[:query],
+            class: "form-control",
+            placeholder: "Type a keyword"
+        %>
+      <%= submit_tag "Search", name: "", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
 
     <h1>Browse new in </h1>
 
