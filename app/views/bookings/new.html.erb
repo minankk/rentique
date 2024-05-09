@@ -1,3 +1,4 @@
+
 <div class="booking-form" >
 <h1>create your booking</h1>
 <h3><%= @item.description %> </h3>
@@ -7,3 +8,6 @@
           <%= f.submit class: "btn btn-flat" %>
         <% end %>
 </div>
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
+
