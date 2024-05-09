@@ -1,4 +1,4 @@
-
+<div class="booking-form" >
 <h1>create your booking</h1>
 <h3><%= @item.description %> </h3>
         <%= simple_form_for [@item, @booking] do |f| %>
@@ -6,3 +6,4 @@
           <%= f.input :end_date %>
           <%= f.submit class: "btn btn-flat" %>
         <% end %>
+</div>
