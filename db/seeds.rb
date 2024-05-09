@@ -47,7 +47,7 @@ user4 = User.create!(
 
 user5 = User.create!(
   email: 'justin_a@gmail.com',
-  username: 'justina',
+  username: 'justin',
   mobile: '9876543210',
   address: '40 Elm Street',
   password: 'password'
