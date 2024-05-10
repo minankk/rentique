@@ -13,14 +13,14 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
+    @categories = ["Dresses", "Suits", "Accessories", "Jackets", "shoes"]
   end
 
   def create
     @item = Item.new(item_params)
     @item.user = current_user
-    raise
     if @item.save
-      redirect_to @item, notice: "Wardbrobe was successfully created."
+      redirect_to item_path(@item), notice: "Wardbrobe was successfully created."
     else
       render :new
     end

@@ -1,36 +1,26 @@
-<h1>Create a New Item</h1>
+<div class = "new-wardrobe-form">
+<h1>Create a new wardrobe</h1>
 
 <%= simple_form_for @item do |f| %>
-
-
-    <%= f.input :description %>
-
-
-
-
-    <%= f.input :category %>
-
-
+<div class = "form-two">
+    <%= f.input :description, placeholder: "little help? enter brand name, name of the item and a short description - lets go! queen/ king! 💅😃" %>
 
 
     <%= f.input :rental_price %>
 
-
-
-
     <%= f.input :retail_price %>
-  </div>
 
-
-
+    <%= f.label :category %>
+    <%= f.select :category, @categories %> <br> <br>
 
     <%# <%= f.file_field :image %>
 
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Create wardrobe", class: "btn btn-primary" %>
-  </div>
+    <%= f.submit "Create Wardrobe" %>
+    <%# <%= link_to "Create Wardrobe", item_path %>
+</div>
 <% end %>
+<div class = "cancel-link">
+<%= link_to "Cancel", items_path %> <br>
+</div>
 
-<%= link_to "Cancel", items_path, class: "btn btn-secondary" %>
+</div>
