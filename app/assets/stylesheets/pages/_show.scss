@@ -1,20 +1,89 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-}
 .container {
-  width: 80%;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-.price-tag {
-  background-color: #D5DB4E;
-  padding: 10px;
+  border: none;
   border-radius: 5px;
+}
+
+.item-details {
+  display: flex;
+}
+
+.text {
+  flex: 1;
+}
+
+.item-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.details {
+  font-size: 16px;
+}
+
+.rrp {
+  color: #999;
+  text-decoration: line-through;
+}
+
+.rent-for {
+  color: #000;
+}
+
+.image-container {
+  flex-basis: 30%;
+  margin-right: 20px; /* Adjusted margin */
+}
+
+.item-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
   display: inline-block;
-  margin-top: 10px;
+  padding: 8px 20px; /* Adjusted padding for the Back button */
+  border: 2px solid #15B3D8;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #15B3D8;
+}
+
+.btn-primary {
+  background-color: white;
+  border-color: #15B3D8;
+  color: #15B3D8;
+  padding: 8px 120px; /* Adjusted padding for the Rent button */
+}
+
+.btn:hover {
+  background-color: #15B3D8;
+  color: white;
+  border-color: #15B3D8;
+  transform: scale(1.05);
+}
+
+.disclaimer-container {
+  text-align: center;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.small-text {
+  font-size: 12px; /* Adjust the font size as needed */
+  color: #999; /* Grey color */
 }
