@@ -12,10 +12,23 @@ class ItemsController < ApplicationController
   end
 
   def new
-
+    @item = Item.new
   end
 
   def create
+    @item = Item.new(item_params)
+    @item.user = current_user
+    raise
+    if @item.save
+      redirect_to @item, notice: "Wardbrobe was successfully created."
+    else
+      render :new
+    end
+  end
 
+  private
+
+  def item_params
+    params.require(:item).permit(:description, :category, :retail_price, :rental_price)
   end
 end
