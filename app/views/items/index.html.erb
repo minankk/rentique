@@ -6,6 +6,7 @@
                 <div class="card-image">
                     <!-- You can add the image here -->
                     <!-- <img src="item_image.jpg" alt="Item Image"> -->
+                    <%= image_tag item.image_url if item.image_url %>
                 </div>
                 <div class="card-content">
                     <%= link_to item.description, item_path(item) %>

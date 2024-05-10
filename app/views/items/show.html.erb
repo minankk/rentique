@@ -1,9 +1,23 @@
-   <div class="container">
-        <h1><%= @item.description %></h1>
-        <p> Retail Price: $<%= @item.retail_price %></p>
-        <p>Category: <%= @item.category %></p>
-        <p>Description: <%= @item.description %></p>
-        <p>Rental Price: $<%= @item.rental_price %></p>
+<div class="container">
+  <div class="item-details">
+    <div class="image-container">
+      <%= image_tag @item.image_url, class: "item-image" if @item.image_url %>
     </div>
-    <%= link_to 'Back', items_path %>
-    <%= link_to "book this item", new_item_booking_path(@item) %>
+    <div class="text">
+      <h1><%= @item.description %></h1>
+      <div class="details">
+        <p class="rrp"> RRP: $<%= @item.retail_price %></p>
+        <p> Category: <%= @item.category %></p>
+        <p> Description: <%= @item.description %></p>
+        <p> Rent For: $<b><%= @item.rental_price %></b></p> <!-- Added <b> tag -->
+      </div>
+      <div class="button-container">
+        <%= link_to 'Back', items_path, class: "btn btn-secondary" %>
+        <%= link_to "Rent", new_item_booking_path(@item), class: "btn btn-primary" %>
+      </div>
+      <div class="disclaimer-container">
+        <p class="small-text">All in-app rentals are monitored and are guaranteed on a case-by-case basis.</p>
+      </div>
+    </div>
+  </div>
+</div>
