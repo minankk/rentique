@@ -1,0 +1,36 @@
+<h1>Create a New Item</h1>
+
+<%= simple_form_for @item do |f| %>
+
+
+    <%= f.input :description %>
+
+
+
+
+    <%= f.input :category %>
+
+
+
+
+    <%= f.input :rental_price %>
+
+
+
+
+    <%= f.input :retail_price %>
+  </div>
+
+
+
+
+    <%# <%= f.file_field :image %>
+
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create wardrobe", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%= link_to "Cancel", items_path, class: "btn btn-secondary" %>

@@ -1,5 +1,6 @@
    <div class="container">
         <h1><%= @item.description %></h1>
+          <%= image_tag @item.image_url if @item.image_url %>
         <p> Retail Price: $<%= @item.retail_price %></p>
         <p>Category: <%= @item.category %></p>
         <p>Description: <%= @item.description %></p>
