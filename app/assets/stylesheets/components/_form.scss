@@ -1,7 +1,7 @@
 
 
 
-.booking-form {
+.booking-form, .new-wardrobe-form {
   padding: 20px;
   background-color: #f8f9fa;
   border: 1px solid #ccc;
@@ -66,4 +66,52 @@
 
 .booking-form a:hover {
   text-decoration: underline;
+}
+
+.new-wardrobe-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 70px;
+  h1 {
+    color: #15B3D8;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-two {
+    .input {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"], .cancel-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    input[type="submit"]:hover, .cancel-link:hover {
+      background-color: #0056b3;
+    }
+  }
 }
